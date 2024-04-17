@@ -53,7 +53,7 @@ def make_predictions(data_model: DataModel):
 
 
 
-@app.post("/upload-csv/")
+@app.post("/upload-csv")
 async def upload_csv(file: UploadFile = File(...)):
     print(f"Received file: {file.filename}, Content type: {file.content_type}")
     if file.content_type != 'text/csv':
