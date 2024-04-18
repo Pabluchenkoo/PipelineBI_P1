@@ -17,6 +17,8 @@ app = FastAPI()
 # Define a list of origins that should be allowed
 # Use ["*"] to allow all origins
 origins = [
+    "https://example.com",
+    "http://subdomain.example.com",
     "http://localhost:3000",  
     "http://127.0.0.1:3000",
 ]
